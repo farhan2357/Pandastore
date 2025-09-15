@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panda Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f8ff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(90deg, #007bff, #00c6ff);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background: #0056b3;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .content {
+      padding: 30px;
+      text-align: center;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      max-width: 400px;
+    }
+    footer {
+      background: #0056b3;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🐼 Panda Store</h1>
+    <p>Toko Voucher Game & Pulsa</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Produk</a>
+    <a href="#">Tentang</a>
+    <a href="#">Kontak</a>
+  </nav>
+
+  <div class="content">
+    <div class="card">
+      <h2>Selamat Datang</h2>
+      <p>Kami menyediakan voucher game dan pulsa dengan harga murah dan layanan cepat.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Panda Store</p>
+  </footer>
+</body>
+</html>
