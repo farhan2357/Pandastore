@@ -4,39 +4,151 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Panda Store</title>
-  <!-- Hubungkan dengan file CSS -->
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    nav {
+      background: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      background: #2c3e50;
+      color: #fff;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    .btn-wa {
+      display: inline-block;
+      background: #25d366;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .btn-wa:hover {
+      background: #1eb346;
+    }
+
+    /* Produk grid */
+    .produk-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+    .produk-item {
+      background: #ecf0f1;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .produk-item:hover {
+      transform: scale(1.05);
+      background: #dfe6e9;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>🐼 Panda Store</h1>
-    <p>Toko Voucher Game & Pulsa</p>
+    <h1>Panda Store</h1>
+    <p>Voucher Game & Pulsa Murah, Cepat, Terpercaya</p>
   </header>
 
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Produk</a>
-    <a href="#">Tentang</a>
-    <a href="#">Kontak</a>
+    <a href="#home">Home</a>
+    <a href="#produk">Produk</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#kontak">Kontak</a>
   </nav>
 
   <main>
-</section>
-    <div class="card">
-      <h2>Selamat Datang!</h2>
-      <p>Kami menyediakan voucher game dan pulsa dengan harga murah serta layanan cepat.</p>
-    </div>
+    <!-- Bagian Home -->
+    <section id="home" class="card">
+      <h2>Selamat Datang di Panda Store</h2>
+      <p>Kami menjual voucher game dan pulsa dengan harga murah, cepat, dan terpercaya.</p>
+    </section>
+
+    <!-- Bagian Produk -->
+    <section id="produk" class="card">
+      <h2>Produk Kami</h2>
+      <div class="produk-grid">
+        <div class="produk-item">
+          <h3>Voucher Mobile Legends</h3>
+          <a href="https://wa.me/62895415639705?text=Halo%20saya%20mau%20beli%20Voucher%20Mobile%20Legends" target="_blank" class="btn-wa">Beli Sekarang</a>
+        </div>
+        <div class="produk-item">
+          <h3>Voucher Free Fire</h3>
+          <a href="https://wa.me/62895415639705?text=Halo%20saya%20mau%20beli%20Voucher%20Free%20Fire" target="_blank" class="btn-wa">Beli Sekarang</a>
+        </div>
+        <div class="produk-item">
+          <h3>Voucher PUBG Mobile</h3>
+          <a href="https://wa.me/62895415639705?text=Halo%20saya%20mau%20beli%20Voucher%20PUBG%20Mobile" target="_blank" class="btn-wa">Beli Sekarang</a>
+        </div>
+        <div class="produk-item">
+          <h3>Pulsa Semua Operator</h3>
+          <a href="https://wa.me/62895415639705?text=Halo%20saya%20mau%20beli%20Pulsa%20Semua%20Operator" target="_blank" class="btn-wa">Beli Sekarang</a>
+        </div>
+        <div class="produk-item">
+          <h3>Paket Data Internet</h3>
+          <a href="https://wa.me/62895415639705?text=Halo%20saya%20mau%20beli%20Paket%20Data%20Internet" target="_blank" class="btn-wa">Beli Sekarang</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian Tentang -->
+    <section id="tentang" class="card">
+      <h2>Tentang Panda Store</h2>
+      <p>Panda Store berdiri sejak 2025 untuk memenuhi kebutuhan gamer dan pengguna HP di seluruh Indonesia. 
+         Kami selalu mengutamakan harga murah, layanan cepat, dan kepercayaan pelanggan.</p>
+    </section>
+
     <!-- Bagian Kontak -->
-<section id="kontak" class="card">
-  <h2>Kontak Kami</h2>
-  <p>Hubungi kami untuk pembelian voucher atau pulsa:</p>
-  <p>
-    📱 <a href="https://wa.me/62895415639705" target="_blank">Chat via WhatsApp</a><br>
-</section>
+    <section id="kontak" class="card">
+      <h2>Kontak Kami</h2>
+      <p>Hubungi kami untuk pembelian voucher atau pulsa:</p>
+      <p>
+        <a href="https://wa.me/62895415639705" target="_blank" class="btn-wa">💬 Chat via WhatsApp</a>
+      </p>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Panda Store</p>
+    <p>&copy; 2025 Panda Store. All rights reserved.</p>
   </footer>
 </body>
 </html>
